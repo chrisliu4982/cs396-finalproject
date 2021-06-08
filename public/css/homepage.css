@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    line-height: 1.4em;
+    grid-template-columns: 240px auto;
+    grid-template-rows: 70px auto;
+    grid-template-areas: 
+        "top top"
+        "left main";
+}
+
+header, main, aside{
+    border: solid 1px black;
+    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+header {
+    grid-area: top;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    border: solid, black;
+    height: 75px;
+}
+aside {
+    grid-area: left;
+    font-size: 14px;
+    
+}
+main {
+    grid-area: main;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 70px);
+}
+#asideseason {
+    font-weight: bold;
+    margin-top: 4px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+div {
+    padding-left: 20px;
+}
+
+div:hover {
+    background-color: #d3d3d3;
+}
+
+#constructorsstandings, #driversstandings, #teaminfo, #driverinfo {
+    padding-left: 10px;
+}
+
+
+#constructorsstandings:hover {
+    background-color: #d3d3d3;
+}
+#driversstandings:hover {
+    background-color: #d3d3d3;
+}
+#teaminfo:hover {
+    background-color: #d3d3d3;
+}
+#driverinfo:hover {
+    background-color: #d3d3d3;
+}
+#raceName{
+    margin-bottom: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
+
+section {
+    margin-top: 10px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    border: solid 1px black;
+    padding-bottom: 10px;
+}
+
+#alfa, #raikkonen, #giovinazzi {
+    border: solid 5px #900000;
+}
+
+#alphatauri, #gasly, #tsunoda {
+    border: solid 5px #2B4562;
+}
+
+#alpine, #alonso, #ocon{
+    border: solid 5px #0090FF;
+}
+
+#aston_martin, #vettel, #stroll {
+    border: solid 5px #006F62;
+}
+
+#ferrari, #sainz, #leclerc {
+    border: solid 5px #DC0000;
+}
+
+#haas, #mick_schumacher, #mazepin {
+    border: solid 5px #ED1A3B;
+}
+
+#mclaren, #norris, #ricciardo {
+    border: solid 5px #FF8700;
+}
+
+#mercedes, #bottas, #hamilton {
+    border: solid 5px #00D2BE;
+}
+
+#red_bull, #max_verstappen, #perez {
+    border: solid 5px #0600EF;
+}
+
+#williams, #russell, #latifi {
+    border: solid 5px #005AFF;
+}
